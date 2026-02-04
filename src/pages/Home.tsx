@@ -49,7 +49,7 @@ const Home = () => {
             Sayyid Berryl
           </span>
           <span className="block bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400 animate-gradient-x px-2">
-            Mustofa
+            Musthofa
           </span>
         </h1>
 

@@ -34,7 +34,7 @@ const Contact = () => {
                       </div>
                       <div>
                           <p className="text-[10px] font-black uppercase tracking-[0.2em] text-gray-500 mb-1">Send an Email</p>
-                          <p className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">sayyid@example.com</p>
+                          <p className="text-xl font-bold text-white group-hover:text-purple-400 transition-colors">sayyidberrylmusthofa@gmail.com</p>
                           <p className="text-sm text-gray-500 mt-2 font-medium">I usually reply within 24 hours.</p>
                       </div>
                   </div>

@@ -16,7 +16,7 @@ import {
 const About = () => {
   const stats = [
     { label: "Experience", value: "1+ Year", icon: <CodeBracketIcon className="w-5 h-5" />, gradient: "from-purple-500/20 to-pink-500/20", border: "border-purple-500/30" },
-    { label: "Projects", value: "5+", icon: <RocketLaunchIcon className="w-5 h-5" />, gradient: "from-blue-500/20 to-cyan-500/20", border: "border-blue-500/30" },
+    { label: "Projects", value: "10+", icon: <RocketLaunchIcon className="w-5 h-5" />, gradient: "from-blue-500/20 to-cyan-500/20", border: "border-blue-500/30" },
     { label: "Certificate", value: "20+", icon: <SparklesIcon className="w-5 h-5" />, gradient: "from-green-500/20 to-emerald-500/20", border: "border-green-500/30" },
   ];
 
@@ -35,14 +35,14 @@ const About = () => {
       role: "Backend Developer",
       period: "2025",
       tech: ["Laravel", "PostgreSQL","Cyclone"],
-      desc: "Architected Hajj/Umrah systems, managed 40+ endpoints, high-availability focus."
+      desc: "Designed a Hajj/Umrah system, built over 40 endpoints, focused on high availability. Used Cyclone to build Robotic Process Automation (RPA)."
     },
     {
       company: "Freelance Projects",
       role: "Fullstack Developer",
       period: "2023 - 2026",
       tech: ["Laravel", "Spring Boot", "FastAPI", "PostgreSQL", "React"],
-      desc: "Developed attendance systems (Hadir.IN) and pharmacy inventory dashboards."
+      desc: "Designed and developed independent and freelance-ready web and mobile applications using Laravel, Java Spring Boot, FastAPI, React, and Flutter."
     }
   ];
 
@@ -84,8 +84,8 @@ const About = () => {
                 </div>
               </div>
               <div className="space-y-1">
-                <h3 className="text-2xl font-bold tracking-tight">Sayyid Berryl M.</h3>
-                <p className="text-purple-400 font-medium text-sm">Backend Systems Engineer</p>
+                <h3 className="text-2xl font-bold tracking-tight">Sayyid Berryl Musthofa</h3>
+                <p className="text-purple-400 font-medium text-sm">Backend Engineer</p>
                 <div className="pt-3 flex items-center gap-3 text-gray-400 text-xs">
                    <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-white/5 rounded-lg border border-white/5">
                       <MapPinIcon className="w-3.5 h-3.5" />
@@ -93,7 +93,7 @@ const About = () => {
                    </div>
                    <div className="flex items-center gap-1.5 px-2.5 py-1.5 bg-white/5 rounded-lg border border-white/5">
                       <UserIcon className="w-3.5 h-3.5" />
-                      <span>{new Date().getFullYear() - 2004}+ Years Old</span>
+                      <span>{new Date().getFullYear() - 2007}+ Years Old</span>
                    </div>
                 </div>
               </div>
@@ -162,7 +162,7 @@ const About = () => {
               </div>
               <div className="flex items-center gap-2 text-[10px] text-gray-500 font-mono italic">
                  <RocketLaunchIcon className="w-3 h-3" />
-                 <span>sayyid@backend: ~/root/biography.sh</span>
+                 <span>sayyidberrylmusthofa@backend: ~/root/biography.sh</span>
               </div>
             </div>
             
