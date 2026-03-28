@@ -309,13 +309,13 @@ const Certificates = () => {
   };
 
   return (
-    <div className="text-white max-w-7xl mx-auto py-12 px-4 selection:bg-purple-500/30">
+    <div className="text-white max-w-7xl mx-auto py-12 px-4 selection:bg-white/30">
       
       {/* SECTION HEADER */}
       <div className="relative mb-16 text-center">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-purple-600/10 blur-[100px] rounded-full"></div>
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white/5 blur-[100px] rounded-full"></div>
         <h2 className="text-5xl md:text-7xl font-black mb-6 tracking-tighter">
-          <span className="bg-clip-text text-transparent bg-gradient-to-r from-purple-400 via-pink-400 to-purple-400">
+          <span className="text-white drop-shadow-sm">
             Professional
           </span>
           <br className="md:hidden" />
@@ -336,7 +336,7 @@ const Certificates = () => {
               onClick={() => setFilter(cat)}
               className={`px-6 py-2.5 rounded-xl text-sm font-bold transition-all duration-300 ${
                 filter === cat 
-                  ? 'bg-gradient-to-r from-purple-600 to-pink-600 text-white shadow-lg' 
+                  ? 'bg-white/10 text-white shadow-lg border border-white/20' 
                   : 'text-gray-400 hover:text-white hover:bg-white/5'
               }`}
             >
@@ -347,13 +347,13 @@ const Certificates = () => {
 
         {/* Search Bar */}
         <div className="relative w-full md:w-80 group">
-          <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 group-focus-within:text-purple-400 transition-colors" />
+          <MagnifyingGlassIcon className="absolute left-4 top-1/2 -translate-y-1/2 w-5 h-5 text-gray-500 group-focus-within:text-white transition-colors" />
           <input 
             type="text" 
             placeholder="Search certificates..."
             value={searchQuery}
             onChange={(e) => setSearchQuery(e.target.value)}
-            className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-12 pr-4 text-sm focus:outline-none focus:border-purple-500/50 transition-all placeholder:text-gray-600"
+            className="w-full bg-white/5 border border-white/10 rounded-2xl py-3.5 pl-12 pr-4 text-sm focus:outline-none focus:border-white/50 transition-all placeholder:text-gray-600"
           />
         </div>
       </div>
@@ -366,7 +366,7 @@ const Certificates = () => {
             onClick={() => setSelectedCert(index)}
             className="group relative cursor-pointer h-full"
           >
-            <div className={`absolute -inset-0.5 bg-gradient-to-r ${cert.color} rounded-2xl blur-lg opacity-0 group-hover:opacity-30 transition-all duration-500`}></div>
+            <div className={`absolute -inset-0.5 bg-white/20 rounded-2xl blur-lg opacity-0 group-hover:opacity-10 transition-all duration-500`}></div>
             <div className="relative bg-[#0f0f0f] border border-white/10 rounded-2xl overflow-hidden hover:border-white/20 transition-all duration-300 flex flex-col h-full shadow-2xl">
               {/* Thumbnail */}
               <div className="aspect-[4/3] overflow-hidden relative">
@@ -378,7 +378,7 @@ const Certificates = () => {
                 <div className="absolute inset-0 bg-gradient-to-t from-black via-black/20 to-transparent opacity-80"></div>
                 
                 {/* Visual Accent Icon */}
-                <div className={`absolute top-4 right-4 p-2 bg-gradient-to-br ${cert.color} rounded-lg shadow-lg opacity-90 backdrop-blur-sm border border-white/10`}>
+                <div className={`absolute top-4 right-4 p-2 bg-white/10 rounded-lg shadow-lg opacity-90 backdrop-blur-sm border border-white/10`}>
                    {cert.icon}
                 </div>
 
@@ -392,18 +392,18 @@ const Certificates = () => {
 
               {/* Content */}
               <div className="p-5 flex-1 flex flex-col">
-                <h3 className="text-base font-bold text-white mb-2 leading-tight group-hover:text-purple-400 transition-colors">
+                <h3 className="text-base font-bold text-white mb-2 leading-tight group-hover:text-white transition-colors">
                   {cert.title}
                 </h3>
                 <p className="text-[11px] text-gray-500 font-bold uppercase tracking-tighter mb-4">
                    {cert.issuer}
                 </p>
                 <div className="mt-auto pt-4 border-t border-white/5 flex items-center justify-between">
-                  <span className={`text-[9px] font-black px-2 py-0.5 rounded-md bg-gradient-to-r ${cert.color} bg-opacity-10 text-white/50 uppercase tracking-widest`}>
+                  <span className={`text-[9px] font-black px-2 py-0.5 rounded-md bg-white/10 text-gray-300 uppercase tracking-widest`}>
                     {cert.category}
                   </span>
-                  <div className="p-1 rounded-full bg-white/5 group-hover:bg-purple-500/20 transition-colors">
-                    <ArrowTopRightOnSquareIcon className="w-3.5 h-3.5 text-gray-600 group-hover:text-purple-400" />
+                  <div className="p-1 rounded-full bg-white/5 group-hover:bg-white/20 transition-colors">
+                    <ArrowTopRightOnSquareIcon className="w-3.5 h-3.5 text-gray-600 group-hover:text-white" />
                   </div>
                 </div>
               </div>
@@ -420,7 +420,7 @@ const Certificates = () => {
           <p className="text-gray-600 mt-2">Try different search terms or categories</p>
           <button 
             onClick={() => {setFilter('All'); setSearchQuery('');}}
-            className="mt-6 text-purple-400 font-bold underline decoration-purple-500/30 underline-offset-4"
+            className="mt-6 text-white font-bold underline decoration-white/30 underline-offset-4"
           >
             Reset filters
           </button>
@@ -439,7 +439,7 @@ const Certificates = () => {
             {/* Header / Info */}
             <div className="absolute -top-20 left-4 right-4 flex justify-between items-end text-white">
                <div className="space-y-1">
-                  <span className={`px-3 py-1 rounded-full bg-gradient-to-r ${filteredCerts[selectedCert].color} text-[10px] font-black uppercase tracking-[0.2em] shadow-lg mb-2 inline-block`}>
+                  <span className={`px-3 py-1 rounded-full bg-white/10 border border-white/20 text-[10px] font-black uppercase tracking-[0.2em] shadow-lg mb-2 inline-block`}>
                      {filteredCerts[selectedCert].category}
                   </span>
                   <h4 className="font-black text-2xl sm:text-3xl tracking-tight leading-tight">{filteredCerts[selectedCert].title}</h4>
@@ -484,7 +484,7 @@ const Certificates = () => {
                 href={filteredCerts[selectedCert].link} 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="flex items-center gap-3 px-10 py-4 bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:scale-105 transition-all shadow-2xl shadow-purple-600/30"
+                className="flex items-center gap-3 px-10 py-4 bg-white/10 border border-white/20 hover:bg-white/20 rounded-2xl font-black uppercase tracking-[0.2em] text-xs hover:scale-105 transition-all shadow-2xl shadow-white/10"
                >
                  Verify Credential <ArrowTopRightOnSquareIcon className="w-5 h-5" />
                </a>
